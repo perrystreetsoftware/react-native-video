@@ -139,7 +139,8 @@ class ReactExoplayerView extends FrameLayout implements
     private String textTrackType;
     private Dynamic textTrackValue;
     private ReadableArray textTracks;
-    private boolean disableFocus;
+    // Default is true. RN part should set to false in order to request audio focus
+    private boolean disableFocus = true;
     private float mProgressUpdateInterval = 250.0f;
     private boolean playInBackground = false;
     private Map<String, String> requestHeaders;
