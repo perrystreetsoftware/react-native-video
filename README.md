@@ -290,6 +290,7 @@ var styles = StyleSheet.create({
 * [textTracks](#texttracks)
 * [useTextureView](#usetextureview)
 * [volume](#volume)
+* [disableFocus](#disablefocus)
 
 ### Event props
 * [onAudioBecomingNoisy](#onaudiobecomingnoisy)
@@ -805,6 +806,18 @@ Adjust the volume.
 * **Other values** - Reduce volume
 
 Platforms: all
+
+#### disableFocus
+Controls whether the app will request audio focus.
+
+If the focus is disable the app will not make other apps stop playing audio.
+If it is enabled the app will make the other apps stop playing audio.
+So, for example, if you want to create a react native app that plays a video with audio and you want the other apps stop playing audio, you should set disableFocus to false. 
+
+* **true (default)** - Do not make other apps stop playing audio
+* **false** - Make other apps stop playing audio.
+
+Platforms: Android ExoPlayer
 
 
 ### Event props

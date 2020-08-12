@@ -242,7 +242,7 @@ public class ReactExoplayerViewManager extends ViewGroupManager<ReactExoplayerVi
         videoView.setPlayInBackground(playInBackground);
     }
 
-    @ReactProp(name = PROP_DISABLE_FOCUS, defaultBoolean = false)
+    @ReactProp(name = PROP_DISABLE_FOCUS, defaultBoolean = true)
     public void setDisableFocus(final ReactExoplayerView videoView, final boolean disableFocus) {
         videoView.setDisableFocus(disableFocus);
     }
